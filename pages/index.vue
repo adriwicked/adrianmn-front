@@ -34,79 +34,7 @@
 
         <section class="projects">
             <h2>Projects</h2>
-            <ProjectsTable :projects="projects" />            
-            <!-- <table class="projects-table">
-                <tr>
-                    <th>Title</th>
-                    <th class="hide-column">Description</th>
-                    <th>Language</th>
-                </tr>
-                <tr>
-                    <td>
-                        <a
-                            href="https://github.com/adriwicked/tetris-js"
-                            target="_blank"
-                            >Tetris</a
-                        >
-                    </td>
-                    <td class="hide-column">
-                        A flat simple version of the legendary game
-                    </td>
-                    <td>Javascript</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a
-                            href="https://github.com/adriwicked/minesweeper-js"
-                            target="_blank"
-                            >Minesweeper</a
-                        >
-                    </td>
-                    <td class="hide-column">
-                        A minimalist version of minesweeper
-                    </td>
-                    <td>Javascript</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a
-                            href="https://github.com/adriwicked/meeting-availability"
-                            target="_blank"
-                            >Meetings</a
-                        >
-                    </td>
-                    <td class="hide-column">
-                        A library that gives you available time slots to meet
-                    </td>
-                    <td>Python</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a
-                            href="https://store.steampowered.com/app/402040/The_Guest/"
-                            target="_blank"
-                            >The Guest</a
-                        >
-                    </td>
-                    <td class="hide-column">
-                        A PC adventure game version of an escape room
-                    </td>
-                    <td>C#</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a
-                            href="https://store.steampowered.com/app/591750/Solo/"
-                            target="_blank"
-                            >Solo</a
-                        >
-                    </td>
-                    <td class="hide-column">
-                        A puzzler set on a gorgeous and surreal archipelago
-                    </td>
-                    <td>C#</td>
-                </tr>
-            </table> -->
+            <ProjectsTable :projects="projects" />
         </section>
 
         <section class="achievements">
@@ -287,22 +215,36 @@ export default {
         return {
             projects: [
                 {
-                    title: 'Tetris',
-                    description: 'A flat simple version of the legendary game',
-                    language: 'Javascript'
+                    title: "Adrianmn Website",
+                    description:
+                        "The website you are reading right now",
+                    language: "Javascript",
+                    repository: "https://github.com/adriwicked/meeting-availability",
                 },
                 {
-                    title: 'Minesweeper',
-                    description: 'A minimalist version of minesweeper',
-                    language: 'Javascript'
+                    title: "Meetings",
+                    repository: "https://github.com/adriwicked/meeting-availability",
+                    package: "https://pypi.org/project/meeting-availability/",
+                    description:
+                        "A library that gives you available time slots to meet",
+                    language: "Python",
                 },
                 {
-                    title: 'Meetings',
-                    description: 'A library that gives you available time slots to meet',
-                    language: 'Python'
+                    title: "Minesweeper",
+                    repository: "https://github.com/adriwicked/minesweeper-js",
+                    demo: "https://adriwicked.github.io/minesweeper-js",
+                    description: "A minimalist version of minesweeper",
+                    language: "Javascript",
                 },
-            ]
-        }
+                {
+                    title: "Tetris",
+                    repository: "https://github.com/adriwicked/tetris-js",
+                    demo: "https://adriwicked.github.io/tetris-js/",
+                    description: "A flat simple version of the legendary game",
+                    language: "Javascript",
+                },
+            ],
+        };
     },
 };
 </script>
@@ -324,8 +266,7 @@ a {
     border-bottom: none;
     padding-bottom: 1px;
     color: #565656;
-    border-bottom: 1px solid;
-    font-weight: bold;
+    border-bottom: 1px solid;    
 }
 
 a:hover {

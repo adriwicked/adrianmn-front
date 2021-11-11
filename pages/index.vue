@@ -206,6 +206,7 @@
 
 <script>
 import ProjectsTable from "@/components/ProjectsTable.vue";
+import { projects } from '@/test/mocks'
 
 export default {
     components: {
@@ -213,37 +214,7 @@ export default {
     },
     data() {
         return {
-            projects: [
-                {
-                    title: "Adrianmn Website",
-                    description:
-                        "The website you are reading right now",
-                    language: "Javascript",
-                    repository: "https://github.com/adriwicked/meeting-availability",
-                },
-                {
-                    title: "Meetings",
-                    repository: "https://github.com/adriwicked/meeting-availability",
-                    package: "https://pypi.org/project/meeting-availability/",
-                    description:
-                        "A library that gives you available time slots to meet",
-                    language: "Python",
-                },
-                {
-                    title: "Minesweeper",
-                    repository: "https://github.com/adriwicked/minesweeper-js",
-                    demo: "https://adriwicked.github.io/minesweeper-js",
-                    description: "A minimalist version of minesweeper",
-                    language: "Javascript",
-                },
-                {
-                    title: "Tetris",
-                    repository: "https://github.com/adriwicked/tetris-js",
-                    demo: "https://adriwicked.github.io/tetris-js/",
-                    description: "A flat simple version of the legendary game",
-                    language: "Javascript",
-                },
-            ],
+            projects
         };
     },
 };
@@ -266,7 +237,7 @@ a {
     border-bottom: none;
     padding-bottom: 1px;
     color: #565656;
-    border-bottom: 1px solid;    
+    border-bottom: 1px solid;
 }
 
 a:hover {

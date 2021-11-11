@@ -3,7 +3,7 @@
         <li class="item-container table-header">
             <div>Title</div>
             <div>Description</div>
-            <div>Language</div>
+            <div>Tech</div>
             <div>Links</div>
         </li>
         <li
@@ -13,9 +13,13 @@
         >
             <div>{{ project.title }}</div>
             <div>{{ project.description }}</div>
-            <div>{{ project.language }}</div>
+            <div>{{ project.tech }}</div>
             <div class="links-container">
-                <a :href="project.repository" target="blank">
+                <a
+                    :href="project.repository"
+                    target="blank"
+                    v-if="project.repository"
+                >
                     <img
                         class="link-icon"
                         src="~/assets/imgs/github-icon.svg"
@@ -57,13 +61,13 @@ export default {
 
 .item-container {
     display: grid;
-    grid-template-columns: 9em auto 6em 3em;
+    grid-template-columns: 8em auto 7em 3em;
 
     margin: 0;
     padding: 0 1em;
     border-bottom: 1px solid #ddd;
     height: 2.5em;
-    align-items: center;    
+    align-items: center;
 }
 
 .item-container a {

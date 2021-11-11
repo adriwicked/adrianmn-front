@@ -191,14 +191,7 @@
                         target="_blank"
                         >Linkedin</a
                     >
-                </li>
-                <li>
-                    <a
-                        href="https://www.instagram.com/adriwicked/"
-                        target="_blank"
-                        >Instagram</a
-                    >
-                </li>
+                </li>                
             </ul>
         </footer>
     </div>

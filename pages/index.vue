@@ -223,8 +223,7 @@ body {
 
 a {
     text-decoration: none;
-    font-weight: bold;
-    border-bottom: none;
+    font-weight: bold;    
     padding-bottom: 1px;
     color: #565656;
     border-bottom: 1px solid;

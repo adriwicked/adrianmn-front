@@ -4,25 +4,28 @@
             <h1 class="title">{{ project.title }}</h1>
             <ul class="links">
                 <li v-if="project.repository" class="link">
-                    <!-- <a :href="project.repository" target="blank"> repository </a> -->
-                    <img
-                        class="link-icon"
-                        src="~/assets/imgs/github-icon.svg"
-                    />
+                    <a :href="project.repository" target="blank">
+                        <img
+                            class="link-icon"
+                            src="~/assets/imgs/github-icon.svg"
+                        />
+                    </a>
                 </li>
                 <li v-if="project.package" class="link">
-                    <!-- <a :href="project.package" target="blank"> package </a> -->
-                    <img
-                        class="link-icon"
-                        src="~/assets/imgs/package-icon.svg"
-                    />
+                    <a :href="project.package" target="blank">
+                        <img
+                            class="link-icon"
+                            src="~/assets/imgs/package-icon.svg"
+                        />
+                    </a>
                 </li>
                 <li v-if="project.demo" class="link">
-                    <!-- <a :href="project.demo" target="blank"> demo </a> -->
-                    <img
-                        class="link-icon"
-                        src="~/assets/imgs/demo-icon.svg"
-                    />
+                    <a :href="project.demo" target="blank">
+                        <img
+                            class="link-icon"
+                            src="~/assets/imgs/demo-icon.svg"
+                        />
+                    </a>
                 </li>
             </ul>
         </div>
@@ -71,6 +74,10 @@ export default {
     font-size: 16px;
     height: 1.5em;
     margin-left: 0.7em;
+}
+
+.links > li > a {
+    border-bottom: none;
 }
 
 .project-description {

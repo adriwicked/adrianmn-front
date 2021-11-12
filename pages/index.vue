@@ -332,7 +332,7 @@ section h2 {
     margin-bottom: 3rem;
 }
 
-section ul {
+section > ul {
     padding-left: 1rem;
 }
 

@@ -209,9 +209,8 @@ export default {
         };
     },
     beforeMount() {
-        this.$nextTick(() => {
-            window.addEventListener("resize", this.onResize);
-        });
+        this.windowWidth = window.innerWidth
+        window.addEventListener("resize", this.onResize);        
     },
     computed: {
         isMobile: function () {

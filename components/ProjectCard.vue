@@ -80,6 +80,10 @@ export default {
     border-bottom: none;
 }
 
+.links > li > a:hover {
+    background-color: transparent;
+}
+
 .project-description {
     padding-left: 1em;
     margin: 0.8em 0 0.5em 0;

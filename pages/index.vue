@@ -361,9 +361,8 @@ th {
 }
 
 .link-icon {
-    width: 1em;
-    height: 1em;
-    margin-right: 0.5em;
+    width: 1.5em;
+    height: 1.5em;    
 }
 
 .videos {

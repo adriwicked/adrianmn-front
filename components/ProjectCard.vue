@@ -4,13 +4,25 @@
             <h1 class="title">{{ project.title }}</h1>
             <ul class="links">
                 <li v-if="project.repository" class="link">
-                    <a :href="project.repository" target="blank"> repository </a>
+                    <!-- <a :href="project.repository" target="blank"> repository </a> -->
+                    <img
+                        class="link-icon"
+                        src="~/assets/imgs/github-icon.svg"
+                    />
                 </li>
                 <li v-if="project.package" class="link">
-                    <a :href="project.package" target="blank"> package </a>
+                    <!-- <a :href="project.package" target="blank"> package </a> -->
+                    <img
+                        class="link-icon"
+                        src="~/assets/imgs/package-icon.svg"
+                    />
                 </li>
                 <li v-if="project.demo" class="link">
-                    <a :href="project.demo" target="blank"> demo </a>
+                    <!-- <a :href="project.demo" target="blank"> demo </a> -->
+                    <img
+                        class="link-icon"
+                        src="~/assets/imgs/demo-icon.svg"
+                    />
                 </li>
             </ul>
         </div>
@@ -55,9 +67,10 @@ export default {
     display: inline-flex;
 }
 
-.link {
-    margin-left: 1em;
+.links > li {
     font-size: 16px;
+    height: 1.5em;
+    margin-left: 0.7em;
 }
 
 .project-description {

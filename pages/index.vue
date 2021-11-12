@@ -34,7 +34,8 @@
 
         <section class="projects">
             <h2>Projects</h2>
-            <ProjectsTable :projects="projects" />
+            <ProjectCardList :projects="projects" />
+            <!-- <ProjectsTable :projects="projects" /> -->
         </section>
 
         <section class="achievements">
@@ -191,23 +192,19 @@
                         target="_blank"
                         >Linkedin</a
                     >
-                </li>                
+                </li>
             </ul>
         </footer>
     </div>
 </template>
 
 <script>
-import ProjectsTable from "@/components/ProjectsTable.vue";
-import { projects } from '@/test/mocks'
+import { projects } from "@/test/mocks";
 
-export default {
-    components: {
-        ProjectsTable,
-    },
+export default {    
     data() {
         return {
-            projects
+            projects,
         };
     },
 };
@@ -240,7 +237,7 @@ a:hover {
 }
 
 .page-container {
-    width: 50rem;
+    max-width: 50rem;
 }
 
 .presentation-header {
@@ -363,8 +360,10 @@ th {
     font-weight: bold;
 }
 
-.projects .hide-column {
-    display: none;
+.link-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
 }
 
 .videos {
@@ -403,10 +402,6 @@ th {
 
     section {
         margin-top: 6rem;
-    }
-
-    .projects .hide-column {
-        display: table-cell;
     }
 
     .videos {

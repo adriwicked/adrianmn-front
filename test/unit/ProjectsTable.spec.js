@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import ProjectsTable from '@/components/ProjectsTable'
 import { projects } from '@/test/mocks'
 
@@ -6,7 +6,7 @@ describe('ProjectsTable', () => {
     let wrapper
 
     it('shows all the projects received', () => {
-        wrapper = mount(ProjectsTable, {
+        wrapper = shallowMount(ProjectsTable, {
             propsData: {
                 projects
             }

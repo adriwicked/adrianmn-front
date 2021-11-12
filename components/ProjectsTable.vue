@@ -1,19 +1,16 @@
 <template>
     <ol class="ordered-list">
         <li class="item-container table-header">
+            <div></div>
             <div>Title</div>
-            <div>Description</div>
+            <div class="description-col">Description</div>
             <div>Tech</div>
-            <div>Links</div>
         </li>
         <li
-            class="item-container"
             v-for="project in projects"
             :key="project.id"
+            class="item-container"
         >
-            <div>{{ project.title }}</div>
-            <div>{{ project.description }}</div>
-            <div>{{ project.tech }}</div>
             <div class="links-container">
                 <a
                     :href="project.repository"
@@ -24,21 +21,15 @@
                         class="link-icon"
                         src="~/assets/imgs/github-icon.svg"
                     />
-                </a>
-                <a :href="project.demo" target="blank" v-if="project.demo">
-                    <img src="~/assets/imgs/play-icon.svg" class="link-icon" />
-                </a>
-                <a
-                    :href="project.package"
-                    target="blank"
-                    v-if="project.package"
-                >
-                    <img
-                        class="link-icon"
-                        src="~/assets/imgs/package-icon.svg"
-                    />
-                </a>
+                </a>                
             </div>
+            <div>                
+                <a :href="project.package || project.demo" target="blank">
+                    {{ project.title }}
+                </a>                
+            </div>
+            <div class="description-col">{{ project.description }}</div>
+            <div>{{ project.tech }}</div>
         </li>
     </ol>
 </template>
@@ -61,12 +52,12 @@ export default {
 
 .item-container {
     display: grid;
-    grid-template-columns: 8em auto 7em 3em;
+    grid-template-columns: 3em 6em auto 5em;
 
     margin: 0;
     padding: 0 1em;
     border-bottom: 1px solid #ddd;
-    height: 2.5em;
+    min-height: 3em;
     align-items: center;
 }
 
@@ -84,13 +75,20 @@ export default {
 .links-container {
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.link-icon {
-    width: 1em;
-    height: 1em;
-    margin-right: 0.5em;
+@media screen and (min-width: 688px) {
+    /* .item-container {
+        display: grid;
+        grid-template-columns: 8em auto 6em 3em;
+
+        margin: 0;
+        padding: 0 1em;
+        border-bottom: 1px solid #ddd;
+        min-height: 2.5em;
+        align-items: center;
+    } */
 }
 </style>

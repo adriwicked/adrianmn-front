@@ -15,27 +15,27 @@ export const projects = [
     {
         title: "Minesweeper",
         description: "A minimalist version of minesweeper",
-        techs: ["Vanilla JS"],
+        techs: ["VanillaJS", "HTML5 Canvas"],
         repository: "https://github.com/adriwicked/minesweeper-js",
         demo: "https://adriwicked.github.io/minesweeper-js",
     },
     {
         title: "Tetris",
         repository: "https://github.com/adriwicked/tetris-js",
-        techs: ["Vanilla JS"],
+        techs: ["VanillaJS", "HTML5 Canvas"],
         demo: "https://adriwicked.github.io/tetris-js/",
         description: "A flat simple version of the legendary game",
     },
     {
         title: "Solo",        
         techs: ["Unity"],
-        demo: "https://store.steampowered.com/app/402040/The_Guest/",
+        package: "https://store.steampowered.com/app/591750/Solo/",
         description: "A puzzler set on a gorgeous and surreal archipelago",
     },
     {
         title: "The Guest",        
         techs: ["Unity"],
-        demo: "https://store.steampowered.com/app/591750/Solo/",
+        package: "https://store.steampowered.com/app/402040/The_Guest/",
         description: "A PC adventure game version of an escape room",
     },
 ]

@@ -14,6 +14,6 @@ describe('ProjectCard', () => {
         })
 
         const projectCards = wrapper.findAllComponents(ProjectCard)        
-        expect(projectCards.length).toBe(7)
+        expect(projectCards.length).toBe(6)
     })
 })

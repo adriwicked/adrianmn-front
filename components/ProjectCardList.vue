@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="project-card-list-container">
         <ProjectCard
             v-for="project in projects"
             :key="project.id"
@@ -24,4 +24,7 @@ export default {
 </script>
 
 <style>
+.project-card-list-container {
+    padding: 0 1em;
+}
 </style>

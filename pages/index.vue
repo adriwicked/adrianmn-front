@@ -336,7 +336,7 @@ section ul {
     padding-left: 1rem;
 }
 
-section li {
+section > ul > li {
     margin-top: 1rem;
 }
 

@@ -27,12 +27,12 @@ describe('ProjectCard', () => {
             }
         })
     
-        const descElem = wrapper.find('.description')
+        const descElem = wrapper.find('.project-description')
         expect(descElem.text()).toBe(project.description)
     })
     
     it('shows as many links as the project has', () => {
-        const project = projects[1]
+        const project = projects[0]
     
         wrapper = mount(ProjectCard, {
             propsData: {
@@ -41,7 +41,7 @@ describe('ProjectCard', () => {
         })
     
         const linkElems = wrapper.findAll('.link')
-        expect(linkElems.length).toBe(2)
+        expect(linkElems.length).toBe(1)
     })
 
     it('shows as many technologies as the project has', () => {

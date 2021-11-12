@@ -15,14 +15,14 @@ export const projects = [
     {
         title: "Minesweeper",
         description: "A minimalist version of minesweeper",
-        techs: ["VanillaJS", "HTML5 Canvas"],
+        techs: ["VanillaJS", "Canvas"],
         repository: "https://github.com/adriwicked/minesweeper-js",
         demo: "https://adriwicked.github.io/minesweeper-js",
     },
     {
         title: "Tetris",
         repository: "https://github.com/adriwicked/tetris-js",
-        techs: ["VanillaJS", "HTML5 Canvas"],
+        techs: ["VanillaJS", "Canvas"],
         demo: "https://adriwicked.github.io/tetris-js/",
         description: "A flat simple version of the legendary game",
     },

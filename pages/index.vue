@@ -34,8 +34,8 @@
 
         <section class="projects">
             <h2>Projects</h2>
-            <ProjectCardList :projects="projects" />
-            <!-- <ProjectsTable :projects="projects" /> -->
+            <ProjectCardList v-if="isMobile" :projects="projects" />
+            <ProjectsTable v-if="!isMobile" :projects="projects" />
         </section>
 
         <section class="achievements">
@@ -201,11 +201,27 @@
 <script>
 import { projects } from "@/test/mocks";
 
-export default {    
+export default {
     data() {
         return {
             projects,
+            windowWidth: 0,
         };
+    },
+    beforeMount() {
+        this.$nextTick(() => {
+            window.addEventListener("resize", this.onResize);
+        });
+    },
+    computed: {
+        isMobile: function () {
+            return this.windowWidth <= 687;
+        },
+    },
+    methods: {
+        onResize() {
+            this.windowWidth = window.innerWidth;
+        },
     },
 };
 </script>
@@ -223,7 +239,7 @@ body {
 
 a {
     text-decoration: none;
-    font-weight: bold;    
+    font-weight: bold;
     padding-bottom: 1px;
     color: #565656;
     border-bottom: 1px solid;
@@ -361,7 +377,7 @@ th {
 
 .link-icon {
     width: 1.5em;
-    height: 1.5em;    
+    height: 1.5em;
 }
 
 .videos {
@@ -374,8 +390,8 @@ th {
 }
 
 .videos iframe {
-    width: 350px;
-    height: 195px;
+    width: 320px;
+    height: 178px;
     margin-bottom: 1rem;
 }
 

@@ -6,7 +6,7 @@
                 <li v-if="project.repository" class="link">
                     <a :href="project.repository" target="blank">
                         <img
-                            class="link-icon"
+                            class="card-link-icon"
                             src="~/assets/imgs/github-icon.svg"
                         />
                     </a>
@@ -14,7 +14,7 @@
                 <li v-if="project.package" class="link">
                     <a :href="project.package" target="blank">
                         <img
-                            class="link-icon"
+                            class="card-link-icon"
                             src="~/assets/imgs/package-icon.svg"
                         />
                     </a>
@@ -22,7 +22,7 @@
                 <li v-if="project.demo" class="link">
                     <a :href="project.demo" target="blank">
                         <img
-                            class="link-icon"
+                            class="card-link-icon"
                             src="~/assets/imgs/demo-icon.svg"
                         />
                     </a>
@@ -68,6 +68,12 @@ export default {
 
 .links {
     display: inline-flex;
+}
+
+.card-link-icon {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
 }
 
 .links > li {

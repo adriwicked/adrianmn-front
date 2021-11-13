@@ -24,7 +24,4 @@ export default {
 </script>
 
 <style>
-.project-card-list-container {
-    padding: 0 1em;
-}
 </style>

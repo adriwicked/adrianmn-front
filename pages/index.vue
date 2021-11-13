@@ -34,8 +34,8 @@
 
         <section class="projects">
             <h2>Projects</h2>
-            <ProjectCardList v-if="isMobile" :projects="projects" />
-            <ProjectsTable v-if="!isMobile" :projects="projects" />
+            <ProjectCardList v-if="isMounted && isMobile" :projects="projects" />
+            <ProjectsTable v-if="isMounted && !isMobile" :projects="projects" />
         </section>
 
         <section class="achievements">
@@ -206,11 +206,16 @@ export default {
         return {
             projects,
             windowWidth: 0,
+            isMounted: false
         };
-    },
-    beforeMount() {
+    },    
+    mounted() {
+        this.isMounted = true
         this.windowWidth = window.innerWidth
         window.addEventListener("resize", this.onResize);        
+    },
+    beforeDestroy() { 
+        window.removeEventListener('resize', this.onResize); 
     },
     computed: {
         isMobile: function () {

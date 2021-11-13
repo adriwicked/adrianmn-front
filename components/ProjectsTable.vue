@@ -2,7 +2,7 @@
     <ol class="ordered-list">
         <li class="item-container table-header">
             <div>Title</div>
-            <div class="description-col">Description</div>
+            <div>Description</div>
             <!-- <div>Tech</div> -->
             <div>Links</div>
         </li>
@@ -11,22 +11,13 @@
             :key="project.id"
             class="item-container"
         >
-            <div>
-                <a :href="project.package || project.demo" target="blank">
-                    {{ project.title }}
-                </a>
-            </div>
+            <div class="title-col">{{ project.title }}</div>
             <div class="description-col">
                 <p>{{ project.description }}</p>
                 <span v-for="tech in project.techs" :key="tech" class="tech">
                     {{ tech }}
                 </span>
             </div>
-            <!-- <div class="teachs-container">
-                <span v-for="tech in project.techs" :key="tech">
-                    {{ tech }}
-                </span>
-            </div> -->
             <div class="links-container">
                 <a
                     :href="project.repository"
@@ -94,6 +85,10 @@ export default {
     background-color: transparent;
 }
 
+.title-col {
+    font-weight: bold;
+}
+
 .description-col {
     padding-right: 1em;
     font-size: 16px;
@@ -120,7 +115,7 @@ export default {
     align-items: center;
 }
 
-.link-icon {    
+.link-icon {
     margin-right: 0.5em;
 }
 </style>

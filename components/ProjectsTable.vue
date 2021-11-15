@@ -3,7 +3,6 @@
         <li class="item-container table-header">
             <div>Title</div>
             <div>Description</div>
-            <!-- <div>Tech</div> -->
             <div>Links</div>
         </li>
         <li

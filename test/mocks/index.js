@@ -1,5 +1,11 @@
 export const projects = [
     {
+        title: "Mercadona scraper",
+        description: "A scraper to extract all Mercadona products from its public API",
+        techs: ["NodeJS", "Cloud functions", "Firebase"],
+        repository: "https://github.com/adriwicked/mercadona-scraper",
+    },
+    {
         title: "Adrianmn",
         description: "The website you are reading right now",
         techs: ["VueJS", "NuxtJS", "Firebase"],

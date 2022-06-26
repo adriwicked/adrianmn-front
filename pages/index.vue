@@ -109,49 +109,55 @@
             <h2>Books I recommend</h2>
             <ul>
                 <li>
-                    <a href="https://amzn.com/1617292397" target="_blank"
+                    <a href="https://amzn.com/dp/1492052205" target="_blank"
+                        >Architecture Patterns with Python</a
+                    >
+                    by Harry J.W. Percival
+                </li>
+                <li>
+                    <a href="https://amzn.com/dp/1617292397" target="_blank"
                         >Soft Skills</a
                     >
                     by John Sonmez
                 </li>
                 <li>
-                    <a href="https://amzn.com/0132350882" target="_blank"
+                    <a href="https://amzn.com/dp/0132350882" target="_blank"
                         >Clean Code</a
                     >
                     by Robert C. Martin
                 </li>
                 <li>
-                    <a href="https://amzn.com/0134494164" target="_blank"
+                    <a href="https://amzn.com/dp/0134494164" target="_blank"
                         >Clean Architecture</a
                     >
                     by Robert C. Martin
                 </li>
                 <li>
-                    <a href="https://amzn.com/0137081073" target="_blank"
+                    <a href="https://amzn.com/dp/0137081073" target="_blank"
                         >Clean Coder</a
                     >
                     by Robert C. Martin
                 </li>
                 <li>
-                    <a href="https://amzn.com/0321146530" target="_blank"
+                    <a href="https://amzn.com/dp/0321146530" target="_blank"
                         >Test-Driven Development</a
                     >
                     by Kent Beck
                 </li>
                 <li>
-                    <a href="https://amzn.com/1491950293" target="_blank"
+                    <a href="https://amzn.com/dp/1491950293" target="_blank"
                         >Programming Javascript Applications</a
                     >
                     by Eric Elliott
                 </li>
                 <li>
-                    <a href="https://amzn.com/0596005555" target="_blank"
+                    <a href="https://amzn.com/dp/0596005555" target="_blank"
                         >AI for Game Developers</a
                     >
                     by Glenn Seemann & David Bourg
                 </li>
                 <li>
-                    <a href="https://amzn.com/1491954388" target="_blank"
+                    <a href="https://amzn.com/dp/1491954388" target="_blank"
                         >Mastering Bitcoin</a
                     >
                     by Andreas Antonopoulos

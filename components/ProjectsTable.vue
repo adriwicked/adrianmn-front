@@ -86,6 +86,7 @@ export default {
 
 .title-col {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .description-col {

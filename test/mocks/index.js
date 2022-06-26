@@ -1,8 +1,15 @@
 export const projects = [
     {
+        title: "Monitor Calc",
+        description: "It calculates monitor size given its inches and resolution",
+        techs: ["VanillaJS", "Canvas"],
+        repository: "https://github.com/adriwicked/monitor-size-calculator",
+        demo: "https://monitor-size-calculator.web.app/"
+    },
+    {
         title: "Mercadona scraper",
         description: "A scraper to extract all Mercadona products from its public API",
-        techs: ["NodeJS", "Cloud functions", "Firebase"],
+        techs: ["NodeJS", "Firebase", "Cloud functions"],
         repository: "https://github.com/adriwicked/mercadona-scraper",
     },
     {
